@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="description" content="Zaha Hadid Tribute Website">
+        <meta name="keywords" content="Zaha Hadid, Zaha, Hadid">
+        <meta name="author" content="Rosa Kosol">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="landing-section" id="landing-section">
+            <div class="top-nav">
+                <a href="#home" class="active" id="menu-btn"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a href="#bio" onclick="closeMenu()">Bio</a>
+                  <a href="#projects" onclick="closeMenu()">Projects</a>
+                  <a href="#people" onclick="closeMenu()">People</a>
+                  <a href="#contact" onclick="closeMenu()">Contact</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <h1 class="heading-text" data-fill-text="ZAHA HADID">ZAHA HADID</h1>
+        </section>
+        <section class="tribute-section">
+            <div class="section-text">
+                <h2>TRIBUTE</h2>
+                <p>In memory of one of the greatest modern architects of our time.<br><br>
+                Zaha Hadid was a visionary architect known for her groundbreaking designs and innovative approach to architecture. This is a tribute to Hadid and the contributions she has made to the world.</p>
+            </div>
+            <figure class="portrait-section">
+                <img src="img/medium/zaha_portait_600px.jpg" alt="Black and white portait of Zaha Hadid"/>
+                <figcaption>Zaha Hadid, 1950 - 2016</figcaption>
+            </figure>
+        </section>
+        <section class="bio-section" id="bio">
+            <div class="section-text">
+                <h2>BIO</h2>
+                <div class="divider">
+                    <div class="circle">
+                        <h5>1950</h5>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="vertical-line"></div> 
+                </div>
+                <p>Born in Iraq in 1950, Hadid's distinctive style was characterized by fluid lines, bold curves, and futuristic forms. She pushed the boundaries of traditional architecture, creating structures that appeared to defy gravity and challenge conventional notions of space. </p>
+                <div class="divider">
+                    <div class="vertical-line"></div>
+                    <div class="circle">
+                        <h5>1972</h5>
+                    </div>
+                    <div class="vertical-line"></div> 
+                </div>
+                <p>Hadid began her studies at the Architectural Association School of Architecture in London, United Kingdom in 1972 and graduated with a Diploma in Architecture in 1977. Her studies provided a strong foundation for her later career as a groundbreaking architect and helped shape her unique vision and approach to design.</p>
+                <div class="divider">
+                    <div class="vertical-line"></div>
+                    <div class="circle">
+                        <h5>1993</h5>
+                    </div>
+                    <div class="vertical-line"></div> 
+                </div>
+                <p>Zaha Hadid designed her first building, the Vitra Fire Station in Weil am Rhein, Germany, in 1993. The completion of this project marked a significant milestone in her career as it was her first major built work.</p>
+                <div class="divider">
+                    <div class="vertical-line"></div>
+                    <div class="circle">
+                        <h5>2004</h5>
+                    </div>
+                    <div class="vertical-line"></div> 
+                </div>
+                <p>Throughout her career, she received numerous prestigious awards, including the Pritzker Architecture Prize in 2004, making her the first woman to ever receive the honor.</p>
+                <div class="divider">
+                    <div class="vertical-line"></div>
+                    <div class="vertical-line"></div>
+                    <div class="circle">
+                        <h5>2016</h5>
+                    </div> 
+                </div>
+                <p>Hadid passed away in 2016, but her visionary spirit lives on through her iconic structures and the countless architects she has influenced.</p>
+            </div>
+        </section>
+        <section class="projects-section" id="projects">
+            <h2>PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="img/small/ordrupgaard_copenhagen_420px.jpg" 
+                        srcset="img/small/ordrupgaard_copenhagen_420px.jpg 600w,
+                                img/medium/ordrupgaard_copenhagen_800px.jpg 1000w"
+                        alt="Ordrupgaard Copenhagen"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">Ordrupgaard Copenhagen</span><br>Copenhagen, Denmark - 2005</div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/small/nanjing_420px.jpg" 
+                        srcset="img/small/nanjing_420px.jpg 400w,
+                                img/medium/nanjing_800px.jpg 800w"
+                        alt="Nanjing International Youth Cultural Center by _大面 licensed under Creative Commons 2.0"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">Nanjing International Youth Cultural Center</span><br>Nanjing, China - 2015</div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/small/graz_420px.jpg" 
+                        srcset="img/small/graz_420px.jpg 400w,
+                                img/medium/graz_800px.jpg 800w"
+                            alt="Graz, Burggasse 15 v W by Renardo la vulpo licensed under Creative Commons 4.0"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">Graz, Burggasse 15</span><br>Graz, Austria - 2018</div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/small/eli_420px.jpg" 
+                        srcset="img/small/eli_420px.jpg 400w,
+                                img/medium/eli_800px.jpg 800w"
+                        alt="Eli and Edythe Broad Art Museum by Andrew Martin licensed under Creative Commons 3.0"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">Eli and Edythe Broad Art Museum</span><br>Michigan, United States - 2012</div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/small/wangjing_420px.jpg" 
+                        srcset="img/small/wangjing_420px.jpg 400w,
+                                img/medium/wangjing_800px.jpg 800w"
+                        alt="Wangjing SOHO, Beijing Chaoyang by 钉钉 licensed under Creative Commons 3.0"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">Wangjing SOHO, Beijing Chaoyang</span><br>Beijing, China - 2014</div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/small/wu_library_420px.jpg" 
+                        srcset="img/small/wu_library_420px.jpg 400w,
+                                img/medium/wu_library_800px.jpg 800w"
+                    alt="WU Wien, Library and Learning Center by Nxr-at licensed under Creative Commons 3.0"/>
+                    <div class="img-overlay">
+                        <div class="overlay-text"><span class="span-cap">WU Wien, Library and Learning Center</span><br>Vienna, Austria - 2013</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="people-section" id="people">
+            <h2>PEOPLE</h2>
+            <div class="people-wrap">
+                <img src="img/small/back-arrow.png" class="arrow-button" id="back-button"/>
+                    <div class="people-grid current-slide" id="people-grid">
+                        <div class="people-item">
+                            <img src="img/small/people-1.jpg" alt="Picture of older male employee"/>
+                            <div class="img-overlay">
+                                <div class="overlay-text"><span class="span-cap">John Doe</span><br>Chief Executive Officer</div>
+                            </div>
+                        </div>
+                        <div class="people-item">
+                            <img src="img/small/people-2.jpg" alt="Picture of young female employee"/>
+                            <div class="img-overlay">
+                                <div class="overlay-text"><span class="span-cap">Ami Diallo</span><br>Head of Operations</div>
+                            </div>
+                        </div>
+                        <div class="people-item">
+                            <img src="img/small/people-3.jpg" alt="Picture of young female employee"/>
+                            <div class="img-overlay">
+                                <div class="overlay-text"><span class="span-cap">Michael Russo</span><br>Head of Engineering</div>
+                            </div>
+                        </div>
+                        <div class="people-item">
+                            <img src="img/small/people-4.jpg" alt="Picture of young female employee"/>
+                            <div class="img-overlay">
+                                <div class="overlay-text"><span class="span-cap">Chris O'Brien</span><br>Principal Architect</div>
+                            </div>
+                        </div>
+                        <div class="people-item">
+                            <img src="img/small/people-5.jpg" alt="Picture of young female employee"/>
+                            <div class="img-overlay">
+                                <div class="overlay-text"><span class="span-cap">Jessica Riel</span><br>Head Project Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                <img src="img/small/next-arrow.png" class="arrow-button" id="next-button"/>
+            </div>
+            
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>CONTACT</h2>
+            <form action="action_page.php">
+                <div class="first-name">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                </div>
+                <div class="last-name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname">
+                </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button class="submit-btn" type="submit" value="Submit">Submit</button>
+            </form>
+        </section>
+    </body>
+    <footer>
+        <nav class="footer-nav">
+            <h2 class="footer-text">ZAHA HADID</h2>
+                <div class="footer-content">
+                <span>&copy; Copyright Curie Digital 2023.</span>
+                <span>IMAGES BY FREEPIK.</span>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</html>
