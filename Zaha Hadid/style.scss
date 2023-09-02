@@ -452,7 +452,6 @@ img {
 
 /* PEOPLE SECTION */
 .container {
-    max-width: 1120px;
     width: 100%;
 }
 
@@ -555,6 +554,10 @@ img {
     
     .project-item:hover .img-overlay {
         opacity: 1.0;
+    }
+
+    .container {
+        max-width: 60vw;
     }
 
     form {

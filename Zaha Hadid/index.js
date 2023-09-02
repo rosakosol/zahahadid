@@ -17,7 +17,6 @@ function closeMenu() {
   setTimeout(myFunction, delay);
 }
 
-
 var swiper = new Swiper(".slide-container", {
   slidesPerView: 4,
   spaceBetween: 20,
@@ -40,14 +39,11 @@ var swiper = new Swiper(".slide-container", {
     0: {
       slidesPerView: 1,
     },
-    520: {
+    600: {
       slidesPerView: 2,
     },
-    768: {
+    800: {
       slidesPerView: 3,
-    },
-    1000: {
-      slidesPerView: 4,
     },
   },
 });

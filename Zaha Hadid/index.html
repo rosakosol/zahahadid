@@ -12,6 +12,18 @@
         <link rel="stylesheet" href="swiper-bundle.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css">
+        <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="jquery.aniview.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.aniview').AniView({
+                    animateClass: 'animate__animated',
+                    animateThreshold: 100,
+                    scrollPollInterval: 20
+                });
+            });
+        </script>
     </head>
     <body>
         <section class="landing-section" id="landing-section">
@@ -31,7 +43,7 @@
             </div>
             <h1 class="heading-text" data-fill-text="ZAHA HADID">ZAHA HADID</h1>
         </section>
-        <section class="tribute-section">
+        <section class="tribute-section aniview" data-av-animation="animate__fadeInDown">
             <div class="section-text">
                 <h2>TRIBUTE</h2>
                 <p>In memory of one of the greatest modern architects of our time.<br><br>
@@ -154,56 +166,56 @@
                     <div class="card-wrapper swiper-wrapper">
                         <div class="card swiper-slide">
                             <div class="image-box">
-                                <img src="img/small/people-1.jpg" alt="Picture of older male employee"/>
+                                <img src="img/small/people-1.jpg" alt="Picture of middle-aged caucasian male employee"/>
                             </div>
                             <div class="profile-details">
                                 <div class="name-job">
-                                    <h6>John Doe</h6>
+                                    <h6>John Warrock</h6>
                                     <h6>Chief Executive Officer</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
                             <div class="image-box">
-                                <img src="img/small/people-2.jpg" alt="Picture of older male employee"/>
+                                <img src="img/small/people-2.jpg" alt="Picture of young african female employee "/>
                             </div>
                             <div class="profile-details">
                                 <div class="name-job">
-                                    <h6>John Doe</h6>
-                                    <h6>Chief Executive Officer</h6>
+                                    <h6>Ami Diallo</h6>
+                                    <h6>Senior Project Manager</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
                             <div class="image-box">
-                                <img src="img/small/people-3.jpg" alt="Picture of older male employee"/>
+                                <img src="img/small/people-3.jpg" alt="Picture of mid-thirties biracial male employee"/>
                             </div>
                             <div class="profile-details">
                                 <div class="name-job">
-                                    <h6>John Doe</h6>
-                                    <h6>Chief Executive Officer</h6>
+                                    <h6>Marco Rossia</h6>
+                                    <h6>Head of Engineering</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
                             <div class="image-box">
-                                <img src="img/small/people-4.jpg" alt="Picture of older male employee"/>
+                                <img src="img/small/people-4.jpg" alt="Picture of mid-forties caucasian male employee"/>
                             </div>
                             <div class="profile-details">
                                 <div class="name-job">
-                                    <h6>John Doe</h6>
-                                    <h6>Chief Executive Officer</h6>
+                                    <h6>Michael Smith</h6>
+                                    <h6>Head of Finance</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
                             <div class="image-box">
-                                <img src="img/small/people-5.jpg" alt="Picture of older male employee"/>
+                                <img src="img/small/people-5.jpg" alt="Picture of young caucasian female employee"/>
                             </div>
                             <div class="profile-details">
                                 <div class="name-job">
-                                    <h6>John Doe</h6>
-                                    <h6>Chief Executive Officer</h6>
+                                    <h6>Isabella Arnold</h6>
+                                    <h6>Principal Data Engineer</h6>
                                 </div>
                             </div>
                         </div>
@@ -249,5 +261,6 @@
         </nav>
     </footer>
     <script src="swiper-bundle.min.js"></script>
+    <script src="jquery.aniview.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </html>
