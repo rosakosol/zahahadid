@@ -394,7 +394,7 @@ img {
 .circle {
     width: 16px;
     height: 16px;
-    background: transparent;
+    background: $dark;
     border: 2px solid $dark;
     border-radius: 100px;
     position: relative;
@@ -525,18 +525,27 @@ img {
     font-size: 30px;
 }
 
-/* Devices larger than 600px */
-@media (min-width: 600px) {
+/* Devices larger than 800px */
+@media (min-width: 800px) {
     h1, h2, h3, h4 {
         padding: $padding-md;
+    }
+
+    h6 {
+        font-size: 1.4rem;
     }
 
     p {
         padding: $padding-md;
     }
 
+    section {
+        width: 800px;
+        margin: 0 auto;
+    }
+
     .project-item {
-        width: 80vw;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -557,7 +566,7 @@ img {
     }
 
     .container {
-        max-width: 60vw;
+        max-width: 90vw;
     }
 
     form {
@@ -595,28 +604,16 @@ img {
     }
 
     section {
-        max-width: 70%;
+        width: 1200px;
         margin: 0 auto;
     }
     .project-item {
-        width: 50vw;
+        width: 100%;
+        padding: $padding-lg;
     }
 
-    .people-grid {
-        max-width: 50vw;
-        padding: 0;
-    }
-
-    .people-item {
-        box-sizing: border-box;
-        padding: 0 20px;
-        min-width: 400px;
-    }
-
-    .people-item .img-overlay {
-        opacity: 0;
-        position: relative;
-        bottom: 50%;
+    .container {
+        max-width: 800px;
     }
 
     form {
