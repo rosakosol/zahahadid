@@ -9,6 +9,7 @@
         <meta name="author" content="Rosa Kosol">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="swiper-bundle.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -145,46 +146,75 @@
                 </div>
             </div>
         </section>
+        <!-- PEOPLE SECTION -->
         <section class="people-section" id="people">
             <h2>PEOPLE</h2>
-            <div class="people-wrap">
-                <img src="img/small/back-arrow.png" class="arrow-button" id="back-button"/>
-                    <div class="people-grid current-slide" id="people-grid">
-                        <div class="people-item">
-                            <img src="img/small/people-1.jpg" alt="Picture of older male employee"/>
-                            <div class="img-overlay">
-                                <div class="overlay-text"><span class="span-cap">John Doe</span><br>Chief Executive Officer</div>
+            <div class="container swiper">
+                <div class="slide-container">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="img/small/people-1.jpg" alt="Picture of older male employee"/>
+                            </div>
+                            <div class="profile-details">
+                                <div class="name-job">
+                                    <h6>John Doe</h6>
+                                    <h6>Chief Executive Officer</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="people-item">
-                            <img src="img/small/people-2.jpg" alt="Picture of young female employee"/>
-                            <div class="img-overlay">
-                                <div class="overlay-text"><span class="span-cap">Ami Diallo</span><br>Head of Operations</div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="img/small/people-2.jpg" alt="Picture of older male employee"/>
+                            </div>
+                            <div class="profile-details">
+                                <div class="name-job">
+                                    <h6>John Doe</h6>
+                                    <h6>Chief Executive Officer</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="people-item">
-                            <img src="img/small/people-3.jpg" alt="Picture of young female employee"/>
-                            <div class="img-overlay">
-                                <div class="overlay-text"><span class="span-cap">Michael Russo</span><br>Head of Engineering</div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="img/small/people-3.jpg" alt="Picture of older male employee"/>
+                            </div>
+                            <div class="profile-details">
+                                <div class="name-job">
+                                    <h6>John Doe</h6>
+                                    <h6>Chief Executive Officer</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="people-item">
-                            <img src="img/small/people-4.jpg" alt="Picture of young female employee"/>
-                            <div class="img-overlay">
-                                <div class="overlay-text"><span class="span-cap">Chris O'Brien</span><br>Principal Architect</div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="img/small/people-4.jpg" alt="Picture of older male employee"/>
+                            </div>
+                            <div class="profile-details">
+                                <div class="name-job">
+                                    <h6>John Doe</h6>
+                                    <h6>Chief Executive Officer</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="people-item">
-                            <img src="img/small/people-5.jpg" alt="Picture of young female employee"/>
-                            <div class="img-overlay">
-                                <div class="overlay-text"><span class="span-cap">Jessica Riel</span><br>Head Project Manager</div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="img/small/people-5.jpg" alt="Picture of older male employee"/>
+                            </div>
+                            <div class="profile-details">
+                                <div class="name-job">
+                                    <h6>John Doe</h6>
+                                    <h6>Chief Executive Officer</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                <img src="img/small/next-arrow.png" class="arrow-button" id="next-button"/>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-            
         </section>
+        
         <section class="contact-section" id="contact">
             <h2>CONTACT</h2>
             <form action="action_page.php">
@@ -218,5 +248,6 @@
             </div>
         </nav>
     </footer>
+    <script src="swiper-bundle.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </html>

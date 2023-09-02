@@ -143,7 +143,7 @@ section {
     padding-top: 2rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
 }
@@ -169,6 +169,11 @@ h4 {
 
 h5 {
     font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 
 p {
@@ -422,37 +427,6 @@ img {
     width: 100%;
 }
 
-/* PEOPLE SECTION */
-.people-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.arrow-button {
-    display: none;
-}
-
-.people-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.people-item {
-    max-width: 60%;
-    padding: 0 10px;
-}
-
-.people-item img {
-    width: 100%;
-    margin: 0 auto;
-    opacity: 1;
-    display: block;
-    transition: 0.4s ease;
-}
-
 .img-overlay {
     transition: 0.5s ease;
     text-align: center;
@@ -475,6 +449,58 @@ img {
     line-height: 2rem;
     font-weight: bold;
 }
+
+/* PEOPLE SECTION */
+.container {
+    max-width: 1120px;
+    width: 100%;
+}
+
+.slide-container {
+    margin: 0 8rem;
+    overflow: hidden;
+}
+
+.name-job {
+    padding: 2rem 0;
+}
+
+.card {
+    background-color: #fff;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.card .image-box {
+    height: 100%;
+}
+
+.card .image-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.card .profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-navBtn {
+    color: $dark !important;
+  }
+
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 1rem;
+  }
+  .swiper-pagination-bullet {
+    background-color: #000;
+    padding: 0;
+    border-radius: 50%;
+  }
 
 /* FOOTER */
 .footer-nav {
@@ -528,35 +554,6 @@ img {
     }
     
     .project-item:hover .img-overlay {
-        opacity: 1.0;
-    }
-
-    .arrow-button {
-        display: block;
-        width: 60px;
-        cursor: pointer;
-        margin: 10px;
-    }
-
-    .people-grid {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: scroll;
-    }
-
-    .people-grid::-webkit-scrollbar {
-        display: none;
-    }
-
-    .people-item {
-        min-width: 330px;
-    }
-
-    .people-item:hover img {
-        opacity: 0.2;
-    }
-    
-    .people-item:hover .img-overlay {
         opacity: 1.0;
     }
 
@@ -633,7 +630,7 @@ img {
     }
 
     footer span {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 2rem 0;
     }
 
